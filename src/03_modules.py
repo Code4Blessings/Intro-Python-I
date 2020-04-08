@@ -10,7 +10,10 @@ import sys
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
-print(sum(map(int, sys.argv[1:])))
+for x in sys.argv:
+    print(x)
+
+
 # Print out the OS platform you're using:
 # YOUR CODE HERE
 
@@ -23,6 +26,7 @@ import os
 
 # Print the current process ID
 # YOUR CODE HERE
+print(os.getpgid(0))
 
 # Print the current working directory (cwd):
 # YOUR CODE HERE
